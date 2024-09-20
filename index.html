@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning24/7</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh; /* Ensure body takes full height */
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(to bottom right, #ffffff, #e0e0e0);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 90%; /* Full width with some margin */
+            max-width: 800px; /* Optional max width */
+            margin-top: 20px; /* Added margin for spacing */
+        }
+
+        h1 {
+            font-size: 4em;
+            color: #333;
+            margin-bottom: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between buttons */
+            margin-top: 20px;
+        }
+
+        .icon-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s;
+            font-size: 2em; /* Icon size */
+            text-align: center; /* Center the text */
+        }
+
+        .icon-button:hover {
+            transform: scale(1.1);
+        }
+
+        .icon-button span {
+            display: block; /* Stack the text below the icon */
+            font-size: 0.8em; /* Smaller font size for the button names */
+            margin-top: 5px; /* Space between the icon and the text */
+            color: #333; /* Text color */
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-direction: column; /* Stack images vertically */
+            align-items: center; /* Center the images */
+            margin-top: 20px;
+        }
+
+        .image-gallery img {
+            width: 400px; /* Adjust width as needed */
+            height: auto; /* Responsive height */
+            margin: 10px 0; /* Space above and below each image */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .twitter-icon {
+            margin-top: 10px;
+            font-size: 2em; /* Icon size */
+            color: #1DA1F2; /* Twitter blue color */
+        }
+
+        /* Skip link styles */
+        .skip-link {
+            position: absolute;
+            left: -9999px; /* Hide off-screen */
+        }
+        .skip-link:focus {
+            left: 10px; /* Move back into view when focused */
+            top: 10px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            z-index: 1000;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 3em; /* Smaller title on mobile */
+            }
+            h2 {
+                font-size: 1.2em; /* Smaller subtitle on mobile */
+            }
+            .icon-button {
+                font-size: 1.5em; /* Smaller icons on mobile */
+            }
+            .image-gallery img {
+                width: 100%; /* Full width for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+    <div id="mainContent" class="container">
+        <h1>Learning24/7</h1>
+        <h2>Your education is our priority</h2>
+        <div class="button-container">
+            <button class="icon-button" id="articlesBtn" aria-label="View Articles" onclick="window.location.href='https://www.nature.com/nature/articles'">
+                <i class="fas fa-book"></i>
+                <span>Articles</span>
+            </button>
+            <button class="icon-button" id="tutorsBtn" aria-label="Find Tutors Near Me" onclick="window.location.href='Tutors%20near%20me.html'">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <span>Tutors</span>
+            </button>
+            <button class="icon-button" id="contactUsBtn" aria-label="Contact Support" onclick="window.location.href='Contact%20us.html'">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </button>
+            <button class="icon-button" id="libraryBtn" aria-label="Library Near Me" onclick="window.location.href='Library%20near%20me.html'">
+                <i class="fas fa-book-reader"></i>
+                <span>Library</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="image-gallery">
+        <img src="image1.jfif" alt="Welcome to Learning 24/7 - Your education is our priority">
+        <img src="image2.jfif" alt="Learning resources available 24/7">
+        <img src="image3.jfif" alt="Join us for interactive learning experiences">
+        <img src="image4.jfif" alt="Connect with tutors and peers">
+    </div>
+
+    <footer>
+        &copy; 2024 Learning24/7. All rights reserved.
+        <a href="https://twitter.com/yourTwitterHandle" target="_blank" aria-label="Follow us on Twitter" class="twitter-icon">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </footer>
+</body>
+</html>
