@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Close to Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(to bottom right, #ffffff, #e0e0e0);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .image-gallery img {
+            width: 300px;
+            height: 200px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Library Close to Me</h1>
+        <p>Find the best libraries in your area and explore their resources!</p>
+        <button class="button" onclick="findLibraries()">Find Libraries</button>
+    </div>
+
+    <div class="image-gallery">
+        <img src="lib1.jfif" alt="Library Image 1">
+        <img src="lib2.jfif" alt="Library Image 2">
+    </div>
+
+    <footer>
+        &copy; 2024 Learning24/7. All rights reserved.
+    </footer>
+
+    <script>
+        function findLibraries() {
+            // Redirecting to the specified library services page
+            window.location.href = 'https://www.gauteng.gov.za/Services/GetServices?serviceId=CPM-001499';
+        }
+    </script>
+</body>
+</html>
